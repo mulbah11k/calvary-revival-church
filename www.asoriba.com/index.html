@@ -1,0 +1,823 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html data-wf-page="587ccb5369dd397d228f06bd" data-wf-site="587ccb5369dd397d228f06bc">
+<head>
+  <meta charset="utf-8">
+  <title>Asoriba Church Solutions</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+    <meta name="description" content="Asoriba is a web based church management software or application designed to enable 
+    effective church administration for leaders, seamless engagement with members via content to a mobile app, 
+    easy communication via SMS and email, and providing an easy electronic/digital giving alternative for church members.">
+        <meta name="keywords" content="Churches,asoriba,asoriba.com, Asoreba,asoreba, church management system,
+        church management system with mobile, church app, ghana church management system, membership, Member engagement, church software, church software">
+        <meta name="author" content="Asoriba Inc.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/default.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+  <!--progressive web app configurations-->
+  <meta name="theme-color" content="#051f4c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!--<script type='application/ld+json'> 
+  //     {"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.asoriba.com\/","name":"Asoriba","alternateName":"Asoriba LLC", 
+  //     "potentialAction":{"@type":"SearchAction","target":"https:\/\/blog.asoriba.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}
+  // </script>
+  <script type='application/ld+json'>
+      {"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.asoriba.com\/","sameAs":["https:\/\/www.facebook.com\/asoribapp\/","http:\/\/instagram.com\/asoribapp","https:\/\/www.linkedin.com\/asoriba","http:\/\/www.youtube.com\/c\/AsoribaInc","https:\/\/twitter.com\/asoribapp"],"@id":"#organization","name":"Asoriba","logo":"https:\/\/s3-us-west-2.amazonaws.com\/resources.asoriba.com\/Logos\/512X512.png"}
+  </script>
+-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+
+  
+  <!--google structure data-->
+  <script type='application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Organization",
+    "legalName": "Asoriba",
+    "url": "https://www.asoriba.com",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+233501583322",
+        "contactType": "customer service"
+    },
+    "logo": "https://s3-us-west-2.amazonaws.com/resources.asoriba.com/Logos/512X512.png",
+    "sameAs": [
+        "https://en.wikipedia.org/wiki/Asoriba",
+        "https://gh.linkedin.com/company/asoriba",
+        "https://www.facebook.com/asoribaapp",
+        "https://plus.google.com/+AsoribaInc",
+        "http:\/\/www.youtube.com\/c\/AsoribaInc"
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19 Banana Street, Ambassadorial Enclave",
+        "addressLocality": "East Legon, Accra",
+        "addressRegion": "Greater Accra",
+        "postalCode": "00233",
+        "addressCountry": "Ghana"
+    }
+}
+</script>
+        <!--===========================
+        FACEBOOK OPEN GRAPH
+        =============================-->
+        <meta property="og:site_name" content="Asoriba">
+        <meta property="og:title" content="Asoriba - A seamless web and mobile platform for effective church management.">
+        <meta property="og:description" content="We provide a mobile and web platform that allows church administrators to identify understand, monitor and meet the needs of each church member specifically. Through our mobile application, Church members get to monitor their tithes and financial contributions, donate to the church,get event notifications, devotions(audio, video and text), send prayer requests, engage in group activities While church administrators get to track church progress in areas such as member engagement, attendance, events, finance, membership spiritual growth and many more.">
+        <meta property="og:image" content="https://www.asoriba.com/images/MBP_3up-inward-p-1080x657.png">
+        <meta property="og:url" content="https://asoriba.com">
+        <meta property="og:type" content="website">
+
+
+<!-- <script src="//load.sumome.com/" data-sumo-site-id="7ec23e4390cea78e267ba8acb64c04dc22c69d62bb1aaff0f21bba03faf4d645" async="async"></script> -->
+
+<!-- toky -->
+<script>(function(v,p){
+var s=document.createElement('script');
+s.src='https://app.toky.co/resources/widgets/toky-widget.js?v='+v;
+s.onload=function(){Toky.load(p);};
+document.head.appendChild(s);
+})('3871401', {"$username":"asoriba","$bubble":false,"$text":"Call us for free!"})
+</script>
+
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+      }
+    });
+  </script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body" ng-app="app" ng-controller="mainController">
+  <div class="main-body-wrapper">
+    <div class="scroll-nav w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-ix="display-none">
+      <a ng-if="country != 'nigeria'" class="header-brand_link w-nav-brand ng-cloak" href="/" ng-cloak>
+        <img height="60" sizes="100vw"
+          src="images/asoriba_white.png"
+          srcset="images/asoriba_white.png 500w,
+          images/asoriba_white.png 800w,
+          images/asoriba_white.png 1080w,
+          images/asoriba_white.png 1600w,
+          images/asoriba_white.png 2000w,
+          images/asoriba_white.png 2365w" class="main-menu-logo">
+      </a>
+      <a ng-if="country == 'nigeria'" class="header-brand_link w-nav-brand ng-cloak" href="/" ng-cloak>
+        <img height="60" sizes="100vw"
+          src="images/asoriba_white.png"
+          srcset="images/asoriba_white.png 500w,
+          images/asoriba_white.png 800w,
+          images/asoriba_white.png 1080w,
+          images/asoriba_white.png 1600w,
+          images/asoriba_white.png 2000w,
+          images/asoriba_white.png 2365w" class="main-menu-logo">
+          <img src="images/Interswitch_white.png" alt="Interswitch Logo" class="main-menu-partner-logo">
+      </a>
+      <nav class="main-menu-mobile w-nav-menu" role="navigation">
+        <a class="main-menu-link w-nav-link" href="javascript:void(0);" onclick="location.reload();">Home</a>
+        <a class="main-menu-link w-nav-link" href="#church-leaders">Services</a>
+        <!--<a class="main-menu-link w-nav-link" href="#benefits">Benefits</a>-->
+        <a class="main-menu-link w-nav-link" href="https://clients.asoriba.com/render/clients/" target="_blank">Clients</a>
+        <a class="main-menu-link w-nav-link" href="#pricing">PRICING</a>
+        <a class="main-menu-link w-nav-link" href="about-us/index.html">ABOUT US</a>
+        <!-- <a class="main-menu-link w-nav-link" href="https://blog.asoriba.com/" target="_blank">BLOG</a> -->
+        <a class="main-menu-link w-nav-link" target="_blank" href="https://asoriba.zendesk.com/hc/en-us">HELP</a>
+        <a class="main-menu-link w-nav-link" href="https://app.asoriba.com/#/login">LOGIN</a>
+        <a class="main-menu-button w-button" href="https://app.asoriba.com/#/signup">SIGN UP</a>
+      </nav>
+      <div class="main-menu-mobile-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+    <div class="main-menu w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+      <div class="main-menu-contacts-container w-clearfix ng-cloak" ng-cloak>
+        <img class="main-menu-contacts-icon phone" height="25" src="images/phone.svg">
+        <div class="main-menu-contacts-text" ng-if="country == 'ghana'">+233 (0) 50 158 3326</div>
+        <div class="main-menu-contacts-text" ng-if="country == 'nigeria'">+234 (0) 80 944 88900</div>
+        <div class="main-menu-contacts-text" ng-if="country == 'south_africa'">+27 (0) 63 113 0790</div>
+        <div class="main-menu-contacts-text" ng-if="country == 'kenya'">+254 (0) 71 471 3411</div>
+        <a target="_blank" class="main-menu-contact-link w-inline-block hide-mobile" href="https://www.facebook.com/asoribainc/"><img class="main-menu-contacts-icon" height="25" src="images/facebook-with-circle.svg">
+        </a>
+        <a target="_blank" class="main-menu-contact-link w-inline-block hide-mobile" href="https://twitter.com/AsoribaInc"><img class="main-menu-contacts-icon" height="25" src="images/tumblr-with-circle.svg">
+        </a>
+        <a target="_blank" class="main-menu-contact-link w-inline-block hide-mobile" href="https://www.linkedin.com/company/asoriba"><img class="main-menu-contacts-icon" height="25" src="images/linkedin-with-circle.svg">
+        </a>
+        <a target="_blank"  class="main-menu-contact-link w-inline-block hide-mobile" href="https://youtube.com/@AsoribaInc"><img class="main-menu-contacts-icon" height="25" src="images/youtube-with-circle.svg">
+        </a>
+        <a target="_blank" class="main-menu-contact-link w-inline-block hide-mobile" href="https://www.instagram.com/asoribainc/"><img class="main-menu-contacts-icon" height="25" src="images/instagram-circle-logo-svgrepo-com.svg">
+        </a>
+        <a target="_blank" class="main-menu-contact-link w-inline-block hide-mobile" href="https://plus.google.com/+AsoribaInc"><img class="main-menu-contacts-icon" height="25" src="images/google-with-circle.svg">
+        </a>
+        <a class="main-menu-contact-link w-inline-block hide-mobile" href="mailto:support@asoriba.com"><img class="main-menu-contacts-icon" height="25" src="images/mail-with-circle.svg">
+        </a>
+        <div class="country-form-wrapper w-form">
+          <form class="coutry-form" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+            <select style="color: black" class="country-select-field" data-name="country" id="country" name="country" ng-model="country" ng-change="changeCountry()">
+              <option value="ghana">Ghana</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="south_africa">South Africa</option>
+              <option value="kenya">Kenya</option>
+            </select>
+          </form>
+          <div class="w-form-done"></div>
+          <div class="w-form-fail"></div>
+        </div>
+      </div>
+      <a ng-if="country != 'nigeria'" class="header-brand_link w-nav-brand ng-cloak" href="/" ng-cloak>
+        <img height="60" sizes="(max-width: 479px) 75vw, 162.90625px"
+        src="images/asoriba_white.png"
+        srcset="images/asoriba_white.png 500w,
+        images/asoriba_white.png 800w,
+        images/asoriba_white.png 1080w,
+        images/asoriba_white.png 1600w,
+        images/asoriba_white.png 2000w,
+        images/asoriba_white.png 2365w" class="main-menu-logo">
+      </a>
+      <a ng-if="country == 'nigeria'" class="header-brand_link w-nav-brand ng-cloak" href="/" ng-cloak>
+        <img height="60" sizes="(max-width: 479px) 75vw, 162.90625px"
+        src="images/asoriba_white.png"
+        srcset="images/asoriba_white.png 500w,
+        images/asoriba_white.png 800w,
+        images/asoriba_white.png 1080w,
+        images/asoriba_white.png 1600w,
+        images/asoriba_white.png 2000w,
+        images/asoriba_white.png 2365w" class="main-menu-logo">
+        <img src="images/Interswitch_white.png" alt="Interswitch Logo" class="main-menu-partner-logo">
+      </a>
+      <nav class="main-menu-mobile w-nav-menu" role="navigation">
+        <a class="main-menu-link w-nav-link" href="javascript:void(0);" onclick="location.reload();">Home</a>
+        <a class="main-menu-link w-nav-link" href="#church-leaders">Services</a>
+        <!--<a class="main-menu-link w-nav-link" href="#benefits">Benefits</a>-->
+        <a class="main-menu-link w-nav-link" href="https://clients.asoriba.com/render/clients/" target="_blank">Clients</a>
+        <a class="main-menu-link w-nav-link" href="#pricing">PRICING</a>
+        <a class="main-menu-link w-nav-link" href="about-us/index.html">ABOUT US</a>
+        <!-- <a class="main-menu-link w-nav-link" href="https://blog.asoriba.com/" target="_blank">BLOG</a> -->
+        <a class="main-menu-link w-nav-link" target="_blank" href="https://asoriba.zendesk.com/hc/en-us">HELP</a>
+        <a class="main-menu-link w-nav-link" href="https://app.asoriba.com/#/login">LOGIN</a>
+        <a class="main-menu-button w-button" href="https://app.asoriba.com/#/signup">SIGN UP</a>
+      </nav>
+
+      <div class="main-menu-mobile-button w-nav-button">
+
+        <div class="w-icon-nav-menu"></div>
+      </div>
+      <a class="main-menu-mobile-button w-nav-button" style="border-radius: 3px; background-color: #3ab62a; text-decoration: none;" href="https://app.asoriba.com/#/signup">SIGN UP</a>
+    </div>
+    <div class="header" data-ix="display-nav-scroll" id="home">
+      <div class="main-header-slider w-slider" data-animation="slide" data-duration="500" data-infinite="1">
+        <div class="w-slider-mask">
+          <div class="header-slide1 w-slide">
+            <div class="header-slide1-inner">
+              <div class="main-slider-container w-container">
+                <div class="header-content-container">
+                  <h1 class="header-hero-text" data-ix="title-fade-in">Simple, integrated church management solution.</h1>
+                  <div class="main-menu-sub-hero-text" data-ix="title-fade-in-2">Seamless administration, effective data management and
+                    <br>instant mobile communication for church administrators and congregations.</div>
+                    <a class="btn-primary header-hero-btn-primary w-button" data-ix="hero-button-fade-in" href="#church-leaders">I AM A CHURCH LEADER</a>
+                    <a class="header-hero-btn-default w-button" data-ix="hero-button-fade-in" href="#mobile">I AM A CHURCH MEMBER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-header" id="church-leaders">
+      <div class="subheader-container">
+        <div class="one subheader-card">
+          <img class="subheader-icon" height="34" src="images/church.png">
+          <h3 class="subheader-card-title">Church Administration</h3>
+          <p class="subheader-card-body">Web based church management software, integrated mobile application for members, multiple branch integration.</p>
+        </div>
+        <div class="subheader-card two">
+          <img class="subheader-icon two" height="34" src="images/smartphone.png">
+          <h3 class="subheader-card-title">Mobile Communication</h3>
+          <p class="subheader-card-body">Send devotionals, audio &amp; video content,
+            <br>event notifications and interact with church groups/cells in multiple ways.</p>
+        </div>
+        <div class="one subheader-card"><img class="subheader-icon" height="34" src="images/folder.png">
+          <h3 class="subheader-card-title">Data Management</h3>
+          <p class="subheader-card-body">Member and event management, branch integration and financial management via SMS, Email and mobile notifications.</p>
+        </div>
+      </div>
+    </div>
+    <div class="highlights" id="benefits">
+      <div class="full-width-container">
+        <h2 class="main-section-title">How can we help your church?</h2>
+        <p class="main-section-subhighlights">We are your ministry's software partner, enabling you to manage your church administration and membership seamlessly.</p>
+        <div class="highlights-container w-row">
+          <div class="w-col w-col-6"><img class="highlight-image" sizes="(max-width: 479px) 86vw, (max-width: 767px) 78vw, (max-width: 991px) 38vw, 40vw" src="images/MBP_3up-inward.png" srcset="images/MBP_3up-inward-p-500x304.png 500w, images/MBP_3up-inward-p-800x487.png 800w, images/MBP_3up-inward-p-1080x657.png 1080w, images/MBP_3up-inward-p-1600x973.png 1600w, images/MBP_3up-inward-p-2000x1216.png 2000w, images/MBP_3up-inward-p-2600x1580.png 2600w, images/MBP_3up-inward-p-3200x1945.png 3200w, images/MBP_3up-inward.png 4114w">
+          </div>
+          <div class="w-col w-col-6">
+            <div class="highlight-point-container" data-ix="fade-in-from-right">
+              <div class="highlight-point-icon-container"><img class="highlight-point-icon" src="images/church_white.png" width="50">
+              </div>
+              <div class="highlight-point-title">Church Management Software (Web)</div>
+              <p class="highlight-point-body">Web application for administrators captures detailed church member information, leader and church operations allowing for effective engagement.</p>
+            </div>
+            <div class="highlight-point-container" data-ix="fade-in-from-right">
+              <div class="highlight-point-icon-container"><img class="highlight-point-icon" src="images/smartphone-1.png" width="50">
+              </div>
+              <div class="highlight-point-title">Seamless Communication via Mobile App</div>
+              <p class="highlight-point-body">Church members can receive devotionals, sermons, event notices, other relevant information and send prayer requests through the asoriba app.</p>
+            </div>
+            <div class="highlight-point-container" data-ix="fade-in-from-right">
+              <div class="highlight-point-icon-container"><img class="highlight-point-icon" src="images/get-money.png" width="50">
+              </div>
+              <div class="highlight-point-title">Simple and Convenient Online Giving</div>
+              <p class="highlight-point-body">Members can give tithes, offerings &amp; pledges to the church at their own convenience, anytime, anywhere. And the church can easily send out nice reminders.</p>
+            </div>
+          </div>
+        </div><a class="btn-primary highlights-cta w-button" href="https://app.asoriba.com/#/signup">SIGN UP NOW</a>
+      </div>
+    </div>
+    <div class="benefits" id="features">
+      <div class="full-width-container">
+        <h2 class="main-section-title">Benefits.</h2>
+        <p class="main-section-subhighlights">Discover the great benefits of our cloud based&nbsp;management software, its accompanying&nbsp;mobile app&nbsp;&amp;&nbsp;online giving&nbsp;tool.</p>
+        <div class="w-tabs" data-duration-in="300" data-duration-out="100">
+          <div class="benefits-tabs-menu w-tab-menu">
+            <a class="benefits-tab-link w--current w-inline-block w-tab-link" data-w-tab="Tab 1"><img class="benefits-tab-menu-icon" src="images/head-with-members-hierarchy.svg">
+              <div class="benefits-tab-menu-text">Member Management</div>
+            </a>
+            <a class="benefits-tab-link w-inline-block w-tab-link" data-w-tab="Tab 2"><img class="benefits-tab-menu-icon" src="images/leadership.svg">
+              <div class="benefits-tab-menu-text">Communication</div>
+            </a>
+            <a class="benefits-tab-link w-inline-block w-tab-link" data-w-tab="Tab 3"><img class="benefits-tab-menu-icon" src="images/data-analytics.svg">
+              <div class="benefits-tab-menu-text">Financial Management</div>
+            </a>
+            <a class="benefits-tab-link w-inline-block w-tab-link" data-w-tab="Tab 4"><img class="benefits-tab-menu-icon" src="images/group.svg">
+              <div class="benefits-tab-menu-text">Branch Management/Reports</div>
+            </a>
+            <a class="benefits-tab-link w-inline-block w-tab-link" data-w-tab="Tab 5"><img class="benefits-tab-menu-icon" src="images/leadership.svg">
+              <div class="benefits-tab-menu-text">Attendance Management</div>
+            </a>
+            <a class="benefits-tab-link w-inline-block w-tab-link" data-w-tab="Tab 6"><img class="benefits-tab-menu-icon" src="images/chat.svg">
+              <div class="benefits-tab-menu-text">Free Mobile App</div>
+            </a>
+            <!-- <a class="benefits-tab-link w-inline-block w-tab-link" data-w-tab="Tab 7"><img class="benefits-tab-menu-icon" src="images/money-bag-with-dollar-symbol.svg">
+              <div class="benefits-tab-menu-text">Financials</div>
+            </a> -->
+
+          </div>
+          <div class="w-tab-content">
+            <div class="w-tab-pane" data-w-tab="Tab 1">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Member
+                        <br>Management</div>
+                      <p class="benefits-content-body">Capture deep member data and receive notifications about special dates like birthdays and wedding anniversaries. Record family relationships, work, education and any other information you find relevant. View tithes, contributions, prayer request history, groups joined and attendance frequency of a member. Seamlessly transfer a member to another branch of your church and communicate via our asoriba mobile app.</p>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7"><img class="benefits-image" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4420px) 55vw, 2431px" src="images/benefits/membership_management.png" srcset="images/benefits/membership_management.png 500w, images/benefits/membership_management.png 800w, images/benefits/membership_management.png 1080w, images/benefits/membership_management.png 1600w, images/benefits/membership_management.png 2000w, images/benefits/membership_management.png 2431w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-tab-pane" data-w-tab="Tab 2">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Communication</div>
+                      <p class="benefits-content-body">Communication module allows you to quickly and affordably share content (video, audio and text) with your entire congregation and beyond. Members are notified via SMS, email & push notifications on asoriba mobile app. This allows those who have either feature or smart phones or a computer to easily stay in touch.</p>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7">
+                      <img class="benefits-image" style="padding-left: 47px;" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4420px) 55vw, 2431px" src="images/benefits/communication_sms.png" srcset="images/benefits/communication_sms.png 500w, images/benefits/communication_sms.png 800w, images/benefits/communication_sms.png 1080w, images/benefits/communication_sms.png 1600w, images/benefits/communication_sms.png 2000w, images/benefits/communication_sms.png 2431w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w--tab-active w-tab-pane" data-w-tab="Tab 3">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Financial
+                        <br>Management</div>
+                      <p class="benefits-content-body">General Ledgers, Account Receivables and Account Payables, inflows and outflows, monitor tithes, offerings & pledges. Generate reports and send pledge reminders. Collect welfare dues and keep track of it..</p>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7"><img class="benefits-image member" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4454px) 55vw, 2450px" src="images/benefits/financial_management.png" srcset="images/benefits/financial_management.png 500w, images/benefits/financial_management.png 800w, images/benefits/financial_management.png 1080w, images/benefits/financial_management.png 1600w, images/benefits/financial_management.png 2000w, images/benefits/financial_management.png 2450w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-tab-pane" data-w-tab="Tab 4">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Branch
+                        <br>Management</div>
+                      <p class="benefits-content-body">Integrate all your church branches with a single click of a button and manage them remotely. Asoriba makes available all the features enjoyed by the main church or headquarters available to the branch church, including a mobile app. However, major church settings are restricted from branch administrators..</p>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7"><img class="benefits-image" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4420px) 55vw, 2431px" src="images/benefits/branch_reporting.png" srcset="benefits/branch_reporting.png 500w, images/benefits/branch_reporting.png 800w, images/benefits/branch_reporting.png 1080w, images/benefits/branch_reporting.png 1600w, images/benefits/branch_reporting.png 2000w, images/benefits/branch_reporting.png 2431w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-tab-pane" data-w-tab="Tab 5">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Attendance
+                        <br/>
+                        Management
+                      </br/></div>
+                      <p class="benefits-content-body">Monitor church growth and members frequency and punctuality to church via our attendance monitoring tool. The three modules we provide are the usual attendance headcount analytics, Individual check-in via the special NFC devices and tags we provide and the USSD attendance check-in.</p>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7"><img class="benefits-image" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4420px) 55vw, 2431px" src="images/benefits/attendance.png" srcset="images/benefits/attendance.png 500w, images/benefits/attendance.png 800w, images/benefits/attendance.png 1080w, images/benefits/attendance.png 1600w, images/benefits/attendance.png 2000w, images/benefits/attendance.png 2431w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-tab-pane" data-w-tab="Tab 6">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Free
+                        <br>Mobile App</div>
+                      <p class="benefits-content-body">The asoriba mobile app enables members to receive devotionals, audio & video content, event notifications and announcements from the church or their groups/ministries . This methods saves both the church and the member time and money, by bringing information to thier mobile phones.</p>
+
+                      <div class="benefits-download-badge-container">
+                        <a class="mobile-download-badge-link w-inline-block benefits-download-badge" href="https://play.google.com/store/apps/details?id=com.asoriba.android" target="_blank">
+                          <img class="mobile-download-badge" sizes="147.8125px" src="images/en_badge_web_generic.png" srcset="images/en_badge_web_generic-p-500x153.png 500w, images/en_badge_web_generic.png 565w">
+                        </a>
+                        <a class="mobile-download-badge-link w-inline-block benefits-download-badge" href="https://itunes.apple.com/gh/app/asoriba/id1198146836?mt=8"><img class="mobile-download-badge" src="images/download.png">
+                        </a>
+                        <a class="mobile-download-badge-link w-inline-block benefits-download-badge" href="#"><img class="mobile-download-badge" sizes="128.5px" src="images/Screen-Shot-2017-01-25-at-8.48.47-AM.png" srcset="images/Screen-Shot-2017-01-25-at-8.48.47-AM-p-500x176.png 500w, images/Screen-Shot-2017-01-25-at-8.48.47-AM.png 554w">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7"><img class="benefits-image" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4420px) 55vw, 2431px" src="images/002-MacBook-Gold_cropped.png" srcset="images/002-MacBook-Gold_cropped-p-500x293.png 500w, images/002-MacBook-Gold_cropped-p-800x469.png 800w, images/002-MacBook-Gold_cropped-p-1080x633.png 1080w, images/002-MacBook-Gold_cropped-p-1600x938.png 1600w, images/002-MacBook-Gold_cropped-p-2000x1172.png 2000w, images/002-MacBook-Gold_cropped.png 2431w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="w-tab-pane" data-w-tab="Tab 7">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Financials</div>
+                      <p class="benefits-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7"><img class="benefits-image" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4420px) 55vw, 2431px" src="images/002-MacBook-Gold_cropped.png" srcset="images/002-MacBook-Gold_cropped-p-500x293.png 500w, images/002-MacBook-Gold_cropped-p-800x469.png 800w, images/002-MacBook-Gold_cropped-p-1080x633.png 1080w, images/002-MacBook-Gold_cropped-p-1600x938.png 1600w, images/002-MacBook-Gold_cropped-p-2000x1172.png 2000w, images/002-MacBook-Gold_cropped.png 2431w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="w-tab-pane" data-w-tab="Tab 8">
+              <div class="benefits-tab-pane-inner">
+                <div class="full-width-container">
+                  <div class="w-row">
+                    <div class="w-col w-col-5">
+                      <div class="benefits-big-background-text">Branch&nbsp;
+                        <br>Integration</div>
+                      <p class="benefits-content-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                    </div>
+                    <div class="w-clearfix w-col w-col-7"><img class="benefits-image" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 4420px) 55vw, 2431px" src="images/002-MacBook-Gold_cropped.png" srcset="images/002-MacBook-Gold_cropped-p-500x293.png 500w, images/002-MacBook-Gold_cropped-p-800x469.png 800w, images/002-MacBook-Gold_cropped-p-1080x633.png 1080w, images/002-MacBook-Gold_cropped-p-1600x938.png 1600w, images/002-MacBook-Gold_cropped-p-2000x1172.png 2000w, images/002-MacBook-Gold_cropped.png 2431w">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clients" id="clients">
+      <div class="full-width-container">
+        <h2 class="main-section-title">Our clients.</h2>
+        <p class="main-section-subhighlights">No matter your size or ministry's needs, we provide well-tailored solutions to suit you.</p>
+        <div class="clients-customer-intro-text">Join the likes of...</div>
+        <div class="clients-horizontal-divider"></div>
+        <div class="clients-customer-logo-container"><img class="clients-logo-image" sizes="(max-width: 479px) 64.578125px, 92.25px" src="images/ACI-logo.png" srcset="images/ACI-logo-p-500x542.png 500w, images/ACI-logo.png 608w"><img class="clients-logo-image" src="images/logo-icgc.gif"><img class="clients-logo-image perez" src="images/perez-logo.png"><img class="clients-logo-image" src="images/zoe-embassy.png"><img class="clients-logo-image" sizes="(max-width: 479px) 70px, 100px" src="images/lci-logo.jpg" srcset="images/lci-logo-p-500x500.jpeg 500w, images/lci-logo.jpg 800w"><img class="clients-logo-image" src="images/apostolic-300x300.png">
+        </div>
+        <div class="bottom clients-horizontal-divider"></div><img class="clients-quotes-icon" sizes="50px" src="images/two-quotes.png" srcset="images/two-quotes-p-500x500.png 500w, images/two-quotes.png 512w">
+        <div class="clients-slider-container">
+          <div class="clients-slider w-slider" data-animation="slide" data-autoplay="1" data-delay="7000" data-duration="500" data-infinite="1">
+            <div class="clients-slider-mask w-slider-mask">
+              <div class="clients-slide w-slide">
+                <div class="clients-slide-inner">
+                  <p class="clients-customer-quote-paragraph">"Asoriba is a fantastic tool with great features that any forward looking Christian organization will find tremendously resourceful."</p><img class="clients-customer-image" src="images/Client1.png">
+                  <div>
+                    <div class="clients-customer-name">Rev. Osei-Kusi</div>
+                    <div class="clients-customer-title">Accra - Ghana</div>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-slide w-slide">
+                <div class="clients-slide-inner">
+                  <p class="clients-customer-quote-paragraph felix">"Asoriba has come to solve many challenges that occur in administration on the branch side of leadership. Now with a click of a button, we can see and be up-to-date with every information we need."</p><img class="clients-customer-image" src="images/Client2.png">
+                  <div>
+                    <div class="clients-customer-name">Rev. Felix Parker-Benin</div>
+                    <div class="clients-customer-title">Shepherds Field Chapel - Ghana</div>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-slide w-slide">
+                <div class="clients-slide-inner">
+                  <p class="clients-customer-quote-paragraph david">"I see Asoriba as a ground breaking service that brings multiple solutions through one platform. It is very ideal and I can see a lot of churches happily using the service. I particularly like the intuitiveness of the site making it very user friendly."</p><img class="clients-customer-image" src="images/Client3.png">
+                  <div>
+                    <div class="clients-customer-name">Rev. David Otoo</div>
+                    <div class="clients-customer-title">Calvary Charismatic Baptist Church - England</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><a class="btn-primary highlights-cta w-button" href="https://app.asoriba.com/#/signup">TRY ASORIBA NOW</a>
+      </div>
+    </div>
+    <div class="pricing" id="pricing">
+      <h2 class="main-section-title pricing-title">Join 1,000+ churches and transform your ministry.</h2>
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <div class="pricing-highlights-item-container w-clearfix">
+            <img class="pricing-highlight-item-icon" style="width: 60px;" sizes="(max-width: 479px) 10vw, (max-width: 767px) 11vw, (max-width: 991px) 5vw, 6vw" src="images/rocket-ship.png" srcset="images/rocket-ship.png 500w, images/rocket-ship.png 512w">
+            <p class="pricing-highlight-item-text">Free for churches with 50 members and below. A great opportunity to try out and grow with Asoriba.</p>
+          </div>
+          <!--<div class="first pricing-highlights-item-container w-clearfix">
+            <img class="pricing-highlight-item-icon" sizes="(max-width: 479px) 10vw, (max-width: 767px) 11vw, (max-width: 991px) 5vw, 6vw" src="images/sms-message.png" srcset="images/sms-message.png 500w, images/sms-message.png 512w">
+            <p class="pricing-highlight-item-text">Free monthly SMS to keep you engaged with members who do not use smart phones.</p>
+          </div>-->
+          <div class="pricing-highlights-item-container w-clearfix">
+            <img class="pricing-highlight-item-icon" style="margin-left: -10px;" sizes="(max-width: 479px) 10vw, (max-width: 767px) 11vw, (max-width: 991px) 5vw, 6vw" src="images/mobile-app.png" srcset="images/mobile-app.png 500w, images/mobile-app.png 512w">
+            <p class="pricing-highlight-item-text">Free mobile app to widen your reach, stay engaged with members and recieve donations digitally.</p>
+          </div>
+          <div class="pricing-highlights-item-container w-clearfix">
+            <img class="pricing-highlight-item-icon" sizes="(max-width: 479px) 10vw, (max-width: 767px) 11vw, (max-width: 991px) 5vw, 6vw" src="images/operator.png" srcset="images/operator.png 500w, images/operator.png 512w">
+            <p class="pricing-highlight-item-text">24-hour customer support and a dedicated client success manager at your disposal.</p>
+          </div>
+        </div>
+        <div class="pricing-quote-form-container w-col w-col-5">
+          <div class="pricing-quote-form-title">Request A Quote</div>
+          <div><p class= "pricing-success-message" id="success_message" value="" style="color:green; display: block !important"></p></div>
+          <div class="pricing-quote-form-wrapper w-form">
+            <form class="w-clearfix" id="email-form" name="quote-form">
+
+              <input class="pricing-quote-text-field w-input" id="name" name="name" placeholder="Your Full Name" required="required" type="text">
+              <input class="half-width pricing-quote-text-field w-input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email address" required="required" type="email">
+              <input class="half-width pricing-quote-text-field right w-input" id="phone_no" name="phone_no" placeholder="Enter phone number" required="required" type="text">
+              <input class="pricing-quote-text-field w-input" id="church_name" maxlength="256" name="church_name" placeholder="Enter your church name" required="required" type="text">
+               <input class="pricing-quote-text-field w-input" id="church_location" maxlength="256" name="church_location" placeholder="Enter your church location" required="required" type="text">
+              <input class="half-width pricing-quote-text-field w-input" id="church_size" name="church_size" placeholder="Enter your church size" required="required" type="text">
+              <input class="half-width pricing-quote-text-field right w-input" id="website" name="website" placeholder="Enter your church website" type="text">
+              <input class="pricing-quote-form-submit-btn w-button" id="send_request" data-wait="Please wait..." type="submit" value="Send Request Now">
+            </form>
+            <div class="pricing-form-success w-form-done">
+              <div>Thank you! We'll get back to you as soon as possible!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile" id="mobile">
+      <div class="full-width-container">
+        <h2 class="main-section-title">Your church on your phone.</h2>
+        <p class="main-section-subhighlights">Church should go beyond the typical Sunday service. Asoriba puts your entire church experience in your hands everyday and everywhere.</p>
+        <div class="clients-horizontal-divider mobile-features"></div>
+        <div class="w-row">
+          <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
+            <div class="mobile-single-feature-container" data-ix="fade-in-on-scroll"><img class="mobile-feature-image" src="images/smartphone.png">
+              <div class="mobile-feature-heading">Make Christian Friends
+                <br>across the world.</div>
+              <p class="mobile-feature-body">Stay connected with the body of Christ even when you're constantly on the move, make great friends, turn on notifications to receive announcements from your cells/groups and leaders in real time.</p>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
+            <div class="mobile-single-feature-container" data-ix="fade-in-on-scroll-2"><img class="mobile-feature-image" src="images/folder.png">
+              <div class="mobile-feature-heading">Get devotionals
+                <br>promptly on your phone</div>
+              <p class="mobile-feature-body">Devotions for your daily inspiration is sent by your church and friends, and allows you to have deep <br/> and focused scriptural discussions via <br/> our commenting feature.</p>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
+            <div class="mobile-single-feature-container" data-ix="fade-in-on-scroll-3"><img class="mobile-feature-image" src="images/church.png">
+              <div class="mobile-feature-heading">Pay your tithes
+                <br>and offerings conveniently.</div>
+              <p class="mobile-feature-body">Contribute to the church's progress and development, both spiritually and financially no matter where you are. You are notified in real time once the church receives your contribution.</p>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-medium-6 w-col-small-6">
+            <div class="mobile-single-feature-container" data-ix="fade-in-on-scroll-4"><img class="mobile-feature-image" src="images/share.png">
+              <div class="mobile-feature-heading">Be social,
+                <br>share and communicate.</div>
+              <p class="mobile-feature-body">Join groups/cells in your church, communicate, share and stay connected to the family, <br/> which is critical for your spiritual growth <br/> as a child of God.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-features-container">
+          <div class="clients-horizontal-divider mobile-features"></div>
+        </div>
+        <div class="mobile-download-title">Download our mobile app now.</div>
+        <div class="mobile-download-badge-container">
+          <a class="mobile-download-badge-link w-inline-block" href="https://play.google.com/store/apps/details?id=com.asoriba.android" target="_blank">
+            <img class="mobile-download-badge" sizes="147.8125px" src="images/en_badge_web_generic.png" srcset="images/en_badge_web_generic-p-500x153.png 500w, images/en_badge_web_generic.png 565w">
+          </a>
+          <a class="mobile-download-badge-link w-inline-block" href="https://itunes.apple.com/gh/app/asoriba/id1198146836?mt=8"><img class="mobile-download-badge" src="images/download.png">
+          </a>
+          <!-- <a class="mobile-download-badge-link w-inline-block" href="#"><img class="mobile-download-badge" sizes="128.5px" src="images/Screen-Shot-2017-01-25-at-8.48.47-AM.png" srcset="images/Screen-Shot-2017-01-25-at-8.48.47-AM-p-500x176.png 500w, images/Screen-Shot-2017-01-25-at-8.48.47-AM.png 554w">
+          </a> -->
+        </div>
+      </div>
+    </div>
+    <div class="press">
+      <div class="full-width-container">
+        <h2 class="main-section-title">Church doesn't have to only be on Sundays!</h2>
+        <p class="main-section-subhighlights">
+            Bridge the gap between your church members and administration; connecting to your church members while saving time and money on church administration.
+
+            You leave no church members behind with a more engaged church!
+        </p>
+        <!-- <div class="press-video-title-container"><img class="press-video-title-image" sizes="52.078125px" src="images/Cnn.svg-1.png" srcset="images/Cnn.svg-1-p-500x240.png 500w, images/Cnn.svg-1-p-800x384.png 800w, images/Cnn.svg-1-p-1080x519.png 1080w, images/Cnn.svg-1-p-1600x768.png 1600w, images/Cnn.svg-1.png 2000w">
+          
+          <div class="press-video-title-text">See why &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;thinks we're a great solution for your church.</div>
+        </div> -->
+        <div class="press-video-main-container">
+          <div class="press-video-element w-embed w-video" style="padding-top: 56.17021276595745%;">
+          
+          
+             <iframe class="embedly-embed" src="https://www.youtube.com/embed/FUoEOIYzMC8" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+        
+           <!--  <iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FZnjUQGbRReo%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZnjUQGbRReo&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZnjUQGbRReo%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube" scrolling="no" frameborder="0" allowfullscreen=""></iframe> -->
+          </div>
+        </div>
+        <div class="press-featured-title">Also featured on...</div>
+        <div class="press-logo-container">
+          <a href="https://www.bbc.com/news/business-37249513" target="_blank"><img class="press-logo-item" src="images/bbc-logo-design.png"></a>
+          <a href="https://edition.cnn.com/2016/05/17/africa/asoriba-church-app-ghana/index.html" target="_blank"><img class="press-logo-item" sizes="(max-width: 479px) 48vw, 104.15625px" src="images/Cnn.svg-1.png" srcset="images/Cnn.svg-1-p-500x240.png 500w, images/Cnn.svg-1-p-800x384.png 800w, images/Cnn.svg-1-p-1080x519.png 1080w, images/Cnn.svg-1-p-1600x768.png 1600w, images/Cnn.svg-1.png 2000w"></a>
+          <a href="https://www.forbes.com/sites/kerryadolan/2016/06/06/africas-most-promising-entrepreneurs-forbes-africas-30-under-30-for-2016/?sh=104d21801f43" target="_blank"><img class="press-logo-item" sizes="(max-width: 479px) 64vw, 191.203125px" src="images/Forbes_logo.png" srcset="images/Forbes_logo-p-500x131.png 500w, images/Forbes_logo-p-800x210.png 800w, images/Forbes_logo-p-1080x283.png 1080w, images/Forbes_logo-p-1600x419.png 1600w, images/Forbes_logo.png 2000w"></a>
+          <a href="https://www.newsweek.com/asoriba-app-offers-salvation-through-your-smartphone-525761" target="_blank"><img class="press-logo-item" sizes="(max-width: 479px) 75vw, 329.21875px" src="images/newsweek_logo.jpeg" srcset="images/newsweek_logo-p-500x76.jpeg 500w, images/newsweek_logo-p-800x122.jpeg 800w, images/newsweek_logo-p-1080x165.jpeg 1080w, images/newsweek_logo-p-1600x243.jpeg 1600w, images/newsweek_logo.jpeg 1870w"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-overlay"></div>
+  <div class="footer">
+    <div class="full-width-container">
+      <div class="footer-row-container w-row">
+        <div class="w-col w-col-3">
+          <div class="footer-heading">Company</div>
+          <div class="footer-divider"></div><a class="footer-link" href="about-us/index.html">About Us</a><a class="footer-link" target="_blank" href="https://servicedetails.asoriba.com/home/privacy-policy/index.html">Privacy Policy</a><a class="footer-link" target="_blank" href="https://servicedetails.asoriba.com/service-legal-agreement/index.html">Service Level Agreement</a>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="footer-heading">Features</div>
+          <div class="footer-divider"></div>
+          <a class="footer-link" href="#features">Digital Giving</a>
+          <a class="footer-link" href="#features">Financial Management</a>
+          <a class="footer-link" href="#features">Member Management</a>
+          <a class="footer-link" href="#features">Leadership Management</a>
+          <a class="footer-link" href="#features">Branch Management</a>
+          <a class="footer-link" href="#features">Group/Cell Management</a>
+          <a class="footer-link" href="#features">Communication</a>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="footer-heading">Join Us</div>
+          <div class="footer-divider"></div><a class="footer-link" href="mailto:exec@asoriba.com">Business Partner</a><a class="footer-link" href="mailto:exec@asoriba.com">Sales Partner</a><a class="footer-link" href="mailto:exec@asoriba.com">Brand Partner</a><a class="footer-link" href="mailto:exec@asoriba.com">Internship</a><a class="footer-link" href="mailto:exec@asoriba.com">Consultant</a><a class="footer-link" href="mailto:exec@asoriba.com">Web Developer</a><a class="footer-link" href="mailto:exec@asoriba.com">Mobile App Developer</a>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="footer-heading">Stay in Touch</div>
+          <div class="footer-divider"></div>
+          <div class="ng-cloak" ng-cloak>
+            <div ng-if="country == 'ghana'">
+              <!-- <a class="address footer-link" href="tel:+233501576600">+233 (0) 50 157 6600</a> -->
+              <!-- <a class="address footer-link" href="tel:+233501583322">+233 (0) 50 158 3322</a> -->
+              <a class="address footer-link" href="tel:+233501583326">+233 (0) 501583326</a>
+              <a class="address footer-link" href="#">24 Nii Bu Crescent</a>
+              <a class="address footer-link" href="#">Haatso</a>
+              <a class="address footer-link" href="#">Accra, Ghana</a>
+            </div>
+
+            <div ng-if="country == 'nigeria'">
+              <a class="address footer-link" href="#">Interswitch LTD</a>
+              <a class="address footer-link" href="#">Plot 1648c</a>
+              <a class="address footer-link" href="#">Ako Awo Street</a>
+              <a class="address footer-link" href="#">Victoria Island</a>
+              <a class="address footer-link" href="#">Lagos State</a>
+            </div>
+
+            <div ng-if="country == 'south_africa'">
+              <a class="address footer-link" href="#">5th Floor, Block B, Barclays Rise</a>
+              <a class="address footer-link" href="#">Woodstock Exchange, 66-68</a>
+              <a class="address footer-link" href="#">Woodstock</a>
+              <a class="address footer-link" href="#">Cape Town, 7915</a>
+              <a class="address footer-link" href="#">South Africa</a>
+            </div>
+
+            <div ng-if="country == 'kenya'">
+              <a class="address footer-link" href="#">Acacia Building, 3rd Floor,</a>
+              <a class="address footer-link" href="#">Westlands Office Park,</a>
+              <a class="address footer-link" href="#">Off Waiyaki Way, Nairobi</a>
+              <a class="address footer-link" href="#">Kenya</a>
+            </div>
+          </div>
+
+          <div class="footer-social-media">
+            <a target="_blank" class="footer-social-media-link w-inline-block" href="https://www.facebook.com/asoribainc/"><img class="footer-social-media-icon" src="images/facebook-with-circle.svg">
+            </a>
+            <a target="_blank" class="footer-social-media-link w-inline-block" href="https://twitter.com/AsoribaInc"><img class="footer-social-media-icon" src="images/tumblr-with-circle.svg">
+            </a>
+            <a target="_blank" class="footer-social-media-link w-inline-block" href="https://www.linkedin.com/company/asoriba"><img class="footer-social-media-icon" src="images/linkedin-with-circle.svg">
+            </a>
+            <a target="_blank" class="footer-social-media-link w-inline-block" href="https://plus.google.com/+AsoribaInc"><img class="footer-social-media-icon" src="images/google-with-circle.svg">
+            </a>
+            <!-- <a class="footer-social-media-link w-inline-block" href="#"><img class="footer-social-media-icon" src="images/skype-with-circle.svg">
+            </a> -->
+            <a target="_blank" class="footer-social-media-link w-inline-block" href="https://youtube.com/@AsoribaInc"><img class="footer-social-media-icon" src="images/youtube-with-circle.svg">
+            </a>
+            <a target="_blank" class="footer-social-media-link w-inline-block" href="mailto:support@asoriba.com"><img class="footer-social-media-icon" src="images/mail-with-circle.svg">
+            </a>
+            <a target="_blank" class="footer-social-media-link w-inline-block" href="https://www.instagram.com/asoribainc/"><img class="footer-social-media-icon" src="images/instagram-circle.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright-text">Copyright <span id="year"></span>, Asoriba Inc.</div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/default.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="js/asoriba.js" type="text/javascript"></script>
+  <script src="js/request_quote.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script type="text/javascript">
+    document.getElementById("year").innerHTML = new Date().getFullYear()
+  </script>
+  <script>
+    function parallax(){
+      var scrolled = $(window).scrollTop();
+      $('.header-content-container').css('top', (scrolled * 0.5) + 'px');
+    }
+    $(window).scroll(function(e){
+      parallax();
+    });
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '820443284728948');
+  fbq('track', "PageView");
+  fbq('track', 'CompleteRegistration');</script>
+
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=820443284728948&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script>/*<![CDATA[*/window.zEmbed||function(e,t){
+    var n,o,d,i,s,a=[],r=document.createElement("iframe");
+    window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","asoriba.zendesk.com");/*]]>*/
+  </script>
+  <!-- End of asoriba Zendesk Widget script -->
+
+  <!-- Call Center Widgit -->
+        <div id="toky-business-call-button" toky-username="asoriba" toky-bubble-audio="true" toky-bubble-title="Hey there!" toky-bubble-message="We are here to help you. Click on the button below to call us" toky-btn-text="Call Us" toky-btn-color="blue"></div>
+        <script src="https://beta.toky.co/resources/widgets/toky-all.js"></script>
+
+        <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-58381631-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    <!-- Google Code for Remarketing Tag -->
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 936652236;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/936652236/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
+
+    <!-- Google Code for Adwords Web Sign up Tracking Conversion Page
+    In your html page, add the snippet and call
+    goog_report_conversion when someone clicks on the
+    chosen link or button. -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 936652236;
+        w.google_conversion_label = "-oeGCKeGxmYQzNvQvgM";
+        w.google_remarketing_only = false;
+      }
+      // DO NOT CHANGE THE CODE BELOW.
+      goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      }
+      var conv_handler = window['google_trackConversion'];
+      if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+      }
+    }
+    /* ]]> */
+    </script>
+    <script>
+      $('.benefits-tab-link').hover(function(){
+        $('.w-tab-link').click();
+      }, function(){
+      });
+    </script>
+    <script type="text/javascript"
+      src="//www.googleadservices.com/pagead/conversion_async.js">
+    </script>
+
+</body>
+</html>
