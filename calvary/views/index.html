@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link href="/css/style.css" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="mean_nav">
+            <div class="logo">
+                <h3>Calvary inc</h3>
+            </div>
+            <div class="nav_list">
+                <nav>
+                    <ul class="nav-ul">
+                        <li class="nav-li"><a href="#">Home</a></li>
+                        <li class="nav-li"><a href="#">About</a></li>
+                        <li class="nav-li"><a href="#">Ministers</a></li>
+                        <li class="nav-li"><a href="#">Visit</a></li>
+                        <li class="nav-li"><a href="#">Connect</a></li>
+                        <li class="nav-li"><a href="#">Media</a></li>
+        
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-give">
+                <button>Give</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-img">
+            <div class="hero">
+                <img id="hero-image" src="../public/img/hero-img/hero-img.jpg" alt="Hero Image">
+                <div class="hero-overlay">
+                    <h1>Welcome to Our Website</h1>
+                    <p>Discover amazing stories and experiences.</p>
+                    <a href="#explore" class="hero-btn">Explore Now</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="welcome">
+            <div class="welcome-content">
+                <h2>Welcome to Our Church</h2>
+                <p>We are a family of believers who seek to glorify God through worship, service, and love.</p>
+                <p>At Calvary Church, our mission is to be and make authentic followers of Jesus Christ — to worship God passionately, to preach and teach His Word faithfully, and to serve others in love as we share His Gospel throughout the world.
+                    We invite you to join us!</p>
+
+                <blockquote>
+                    "For where two or three gather in my name, there am I with them." — Matthew 18:20
+                </blockquote>
+            </div>
+        
+            <div class="cards">
+                <div class="card">
+                    <img src="../public/img/SundayWorshipService.jpg" alt="Sunday Service">
+                    <div class="card-overlay">
+                        <h3>Sunday Service</h3>
+                        <p>Join us every Sunday at 10 AM for a powerful time of worship and teaching.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../public/img/bible_study.jpg" alt="Bible Study">
+                    <div class="card-overlay">
+                        <h3>Bible Study</h3>
+                        <p>Grow deeper in the Word every Wednesday at 6 PM.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../public/img/community.jpeg" alt="Community Outreach">
+                    <div class="card-overlay">
+                        <h3>Community Outreach</h3>
+                        <p>Join our mission to serve the community and share God's love.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sermon-section">
+            <div class="container">
+              <h2 class="section-title">Recent Sermons</h2>
+              <div class="sermons-grid">
+                <div class="sermon-card" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                  <div class="sermon-thumb">
+                    <img src="your-sermon-image.jpg" alt="Sermon Title" />
+                    <div class="play-icon">&#9658;</div>
+                  </div>
+                  <div class="sermon-info">
+                    <h3>Back Into the Light</h3>
+                    <p>April 6, 2025</p>
+                  </div>
+                </div>
+                <!-- Repeat .sermon-card for more videos -->
+              </div>
+            </div>
+          
+            <!-- Video Modal -->
+            <div class="video-modal" id="videoModal">
+              <div class="video-content">
+                <span class="close-btn" onclick="closeVideo()">&times;</span>
+                <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2>What People Say About Us</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <img src="path-to-image1.jpg" alt="Person 1">
+                        <div class="testimonial-content">
+                            <p>"This church has been a blessing to my family. The worship is amazing!"</p>
+                            <h4>- John Doe</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="path-to-image2.jpg" alt="Person 2">
+                        <div class="testimonial-content">
+                            <p>"A truly welcoming community that makes everyone feel at home."</p>
+                            <h4>- Sarah Johnson</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="path-to-image3.jpg" alt="Person 3">
+                        <div class="testimonial-content">
+                            <p>"I found a spiritual family here, and my faith has grown stronger."</p>
+                            <h4>- David Smith</h4>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>
+        </section>  
+        <section class="support-section">
+            <!-- Donate Section -->
+            <div class="donate-block">
+              <h2>Support Our Mission</h2>
+              <p>Your generous donation helps us continue to spread the gospel and support our ministries.</p>
+              <a href="#donate-form" class="donate-btn">Donate Now</a>
+            </div>
+          
+            <!-- Prayer Request Section -->
+            <div class="prayer-block" id="prayer">
+              <h2>Submit Your Prayer Request</h2>
+              <p>We would love to pray for you. Submit your prayer request below.</p>
+          
+              <form id="prayerForm">
+                <input type="text" id="prayerName" placeholder="Your Name" required>
+                <input type="email" id="prayerEmail" placeholder="Your Email (optional)">
+                <textarea id="prayerText" placeholder="Your Prayer Request" required></textarea>
+                <button type="submit" class="btn-prayer-submit">Submit Request</button>
+              </form>
+          
+              <div id="prayerConfirmation" class="prayer-confirmation">
+                Thank you! We’ve received your prayer request.
+              </div>
+            </div>
+        </section>
+            
+        
+        
+        <section></section>
+        <section></section>
+    </main>
+    <footer></footer>  
+    <script src="../public/js/index.js"></script>
+</body>
+</html>

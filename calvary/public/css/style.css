@@ -1,0 +1,10 @@
+/*! tailwindcss v4.1.4 | MIT License | https://tailwindcss.com */
+.container {
+  width: 100%;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
